@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(to right, #f58634 55%, #ffff6688); 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a img {
+    width: 15%;
+    border-radius: 50%;
+}
+
+.navbar-toggler {
+    color: #f58634;
+    margin-top: 0;
+}
+
+.navbar-nav {
+    display: flex; 
+    flex-wrap: nowrap; 
+}
+
+.nav-link {
+    white-space: nowrap; 
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000; 
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::before {
+    width: 100%;
+}
+
+.btn-custom {
+    font-size: 18px;
+    background-color: transparent; 
+    border: 1px solid whitesmoke; 
+}
+
+.btn-custom:hover {
+    background-color: #f58634; 
+    color: white; 
+}
+
+.content {
+    /* background-image: url(./assest/restaurant.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: left;  */
+    background: linear-gradient(to right, #f58634 55%, #ffff6688); 
+    padding: 112px 0 40px;
+}
+.content h1 {
+    color: #fff;
+    color: #000;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.btnbtn {
+    background: #ffff6688;
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    border: 1px solid;
+    padding: 10px;
+    transition: .3s;
+    border-radius: 15px;
+}
+
+.btnbtn:hover {
+    background-color: #f58634;
+    color: #ffff6688;
+}
+footer {
+    text-align: center;
+    font-weight: 500;
+    /* margin-top: 40px; */
+    padding: 10px;
+    background: linear-gradient(to right, #f58634 55%, #ffff6688); 
+    color: #000000; 
+}

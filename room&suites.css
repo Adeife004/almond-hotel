@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f8f9fa; 
+}
+
+.navbar {
+    background: linear-gradient(to right, #f58634 55%, #ffff6688);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar a img {
+    width: 15%;
+    border-radius: 50%;
+}
+
+.navbar-toggler {
+    color: #f58634;
+}
+
+.navbar-nav {
+    display: flex; 
+    flex-wrap: nowrap; 
+}
+
+.nav-link {
+    white-space: nowrap; 
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000; 
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::before {
+    width: 100%;
+}
+
+.btn-custom {
+    font-size: 18px;
+    background-color: transparent; 
+    border: 1px solid whitesmoke; 
+}
+
+.btn-custom:hover {
+    background-color: #f58634; 
+    color: white; 
+}
+
+.content-section {
+    background-image: url(./assest/room6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 112px 0 40px;
+    color: #ffffff;
+    /* text-align: center; */
+}
+
+.content-section h1 {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.content-section p {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+.amenities {
+    margin-top: 60px; 
+    /* color: #f58634; */
+}
+
+.amenities h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    border: none; 
+    background-color: transparent; 
+    font-size: 18px;
+    font-weight: 700;
+    color: #f58634;
+}
+
+.features p {
+    font-size: 18px;
+    color: #f58634;
+}
+
+footer {
+    background-color: #f58634; 
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    color: #000000;
+    font-weight: 500;
+}

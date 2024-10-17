@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body, html {
+    height: 100%;
+    background-color: #000000; /* Change this to your preferred background color */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-container {
+    text-align: center;
+}
+
+img {
+   width: 25%;
+   border-radius: 50%;
+   animation: zoom 3s ease-in-out infinite;
+}
+
+/* Keyframes for rotation animation */
+@keyframes zoom {
+    0% {
+        transform: scale(0.5); /* Start smaller */
+    }
+    50% {
+        transform: scale(1); /* Original size */
+    }
+    100% {
+        transform: scale(0.5); /* Back to smaller */
+    }
+}

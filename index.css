@@ -1,3 +1,4 @@
+/* Apply a smooth and elegant global style */
 * {
     margin: 0;
     padding: 0;
@@ -7,32 +8,47 @@
 
 body, html {
     height: 100%;
-    background-color: #000000; /* Change this to your preferred background color */
-    color: white;
+    background-color: #1d252f; /* Deep charcoal gray */
+    color: #ecf0f1; /* Light text color */
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Montserrat', sans-serif; /* Clean, modern font */
+    overflow: hidden;
 }
 
+/* Loading container with a subtle animation */
 .loading-container {
     text-align: center;
+    animation: fadeIn 2s ease-out;
 }
 
 img {
-   width: 25%;
-   border-radius: 50%;
-   animation: zoom 3s ease-in-out infinite;
+    width: 15%; /* Make logo a bit smaller for a more refined look */
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Soft shadow for floating effect */
+    animation: rotateZoom 4s ease-in-out infinite;
 }
 
-/* Keyframes for rotation animation */
-@keyframes zoom {
+/* Fade-in effect for smooth transition */
+@keyframes fadeIn {
     0% {
-        transform: scale(0.5); /* Start smaller */
-    }
-    50% {
-        transform: scale(1); /* Original size */
+        opacity: 0;
     }
     100% {
-        transform: scale(0.5); /* Back to smaller */
+        opacity: 1;
+    }
+}
+
+/* Rotation and zoom animation */
+@keyframes rotateZoom {
+    0% {
+        transform: scale(0.6) rotate(0deg); /* Start smaller and not rotated */
+    }
+    50% {
+        transform: scale(1) rotate(180deg); /* Full size with 180° rotation */
+    }
+    100% {
+        transform: scale(0.6) rotate(360deg); /* Back to smaller with full rotation */
     }
 }
